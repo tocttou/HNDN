@@ -15,24 +15,13 @@ function playNotification(data,sound,message){
   $.get("https://hacker-news.firebaseio.com/v0/item/" + data + ".json?print=pretty", function(item, status){                   
     if(status == "success") {
       var audio = new Audio('/assets/sounds/' + sound);
-      if(message == "newstories"){
         var notification = new Notification(print, {
             icon: '/assets/icons/newsicon128.png',
             body: item["title"]
           });  
         notification.onclick = function () {
           window.open("https://news.ycombinator.com/item?id=" + data);      
-        }; 
-      }
-      else if(message == "topstories"){
-        var notification = new Notification(print, {
-            icon: '/assets/icons/newsicon128.png',
-            body: item["title"] + "\n" + "Score: " + item["score"]
-          });
-        notification.onclick = function () {
-          window.open("https://news.ycombinator.com/item?id=" + data);      
-        }; 
-      }              
+        };              
       audio.play();   
     }
   });
@@ -63,7 +52,7 @@ function fetchLocalStorage(){
 }
 
 fetchLocalStorage();
-setInterval(fetchLocalStorage,"10000");
+setInterval(fetchLocalStorage,"25000");
 
 function tester() {
   if(state == "Enabled"){
