@@ -6,7 +6,7 @@ HNDN is a chrome extension that brings you latest top/new stories from Hacker Ne
 
 HNDN uses the Official Hacker News API available [here](https://github.com/HackerNews/API).
 
-###Download
+##Download
 
 [HNDN](https://chrome.google.com/webstore/detail/hndn/hkfhkpdkpjnbijpgfndjdghboghcplnc)
 
