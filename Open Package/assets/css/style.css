@@ -1,0 +1,65 @@
+body{
+	font-size: 100%;
+	background-color: #ff6600;
+}
+
+.super{
+	width: 40em;
+	text-align: center;
+}
+
+#soundValue{
+	float: left;
+	background-color: #ff6600;
+	border: none;
+	margin-bottom: 1%;
+}
+
+#soundValue:focus{
+	outline: none;
+}
+
+.button-wrapper button{
+	float: left;
+	background-color: #ff6600;
+	border: none;
+	cursor: pointer;
+}
+
+.button-wrapper button:focus{
+	outline: none;
+}
+
+.stick{
+	float: left;
+	margin-top: -0.5%;
+	font-size: 13px;
+}
+
+#image{
+	float: left;
+	border: 1px #ffffff solid;
+	margin-top: -0.5%;
+	-khtml-user-select: none;
+    -o-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#hacker{
+	float: left;
+	background-color: #ff6600;
+	border: none;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+#hacker:focus{
+	outline: none;
+}
+
+#display{
+	float: right;
+	margin-top: -0.5%;
+	font-weight: bold;
+}

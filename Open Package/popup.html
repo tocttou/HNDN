@@ -1,0 +1,51 @@
+<!doctype html>
+<!-- HNDN -by Ashish Chaudhary (github : yankee101) (mail : iamashishchaudhary@gmail.com) -->
+<html>
+  <head>
+    <title>Hackernews Notifications</title>
+    <link rel = "stylesheet" type = "text/css" href = "/assets/css/style.css">
+    <script src = "/assets/js/jquery-2.1.4.min.js"></script>
+    <script src = "/assets/js/notification.js"></script>
+  </head>
+  <body>
+
+    <div class = "super">
+
+      <a target="_blank" href = "https://news.ycombinator.com/"><img id = "image" src = "/assets/icons/y18.gif"></a>
+
+      <a target="_blank" href = "https://news.ycombinator.com/"><button id = "hacker"> Hacker News </button></a>
+
+      <select id="soundValue">
+        <option selected = "selected" value="sound1.mp3">Sound1</option>
+        <option value = "sound2.mp3">Sound2</option>
+        <option value = "sound3.mp3">Sound3</option>
+        <option value = "sound4.mp3">Sound4</option>
+        <option value = "sound5.mp3">Sound5</option>
+        <option value = "sound6.mp3">Sound6</option>
+        <option value = "sound7.mp3">Sound7</option>
+        <option value = "sound8.mp3">Sound8</option>
+      </select>
+
+      <div class = "button-wrapper">
+
+        <div class = "stick"> | </div>
+
+        <button id = "preview">Preview</button>
+
+        <div class = "stick"> | </div>
+
+        <button id = "type"></button>
+
+        <div class = "stick"> | </div>
+
+        <button id = "onoff"></button>
+
+      </div>
+
+      <div id = "display"></div>
+
+    </div>
+
+  </body>
+</html>
+

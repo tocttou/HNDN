@@ -1,0 +1,21 @@
+The following notification sounds have been picked up from www.freesound.org .
+All of the following sounds have been licensed under CC BY-SA 3.0.
+Name of the sounds have been changed for conveinience in usage.
+
+[Name : Actual Name : Creator : Source]
+
+sound1:  Notif-1.mp3 : HTN4ever : https://www.freesound.org/people/HTN4ever/sounds/240943/
+
+sound2: dingaling : morrisjm : https://www.freesound.org/people/morrisjm/sounds/268756/
+
+sound3: Picked Coin Echo : NenadSimic : https://www.freesound.org/people/NenadSimic/sounds/171696/
+
+sound4: Waterdrop : Porphyr : https://www.freesound.org/people/Porphyr/sounds/191678/
+
+sound5 : notification2-freesound.wav : Thoribass : https://www.freesound.org/people/Thoribass/sounds/254819/
+
+sound6: Notification Signal : qubodup : https://www.freesound.org/people/qubodup/sounds/221506/
+
+sound7: Notification Chime : hykenfreak : https://www.freesound.org/people/hykenfreak/sounds/202029/
+
+sound8 : Toaster Pop Up : alanmckinney : https://www.freesound.org/people/alanmckinney/sounds/145227/
