@@ -2,13 +2,13 @@
 
 >Hacker News Desktop Notifications
 
-HNDN is a chrome extension that brings you latest top/new stories from Hacker News. It does not store the notifications, so only the latest notifications (after you start chrome) are available. The extension uses background permissions so you do not need to start chrome for using it. It loads up at the user-login to OS.
+HNDN is a chrome extension that brings you latest top/new stories from Hacker News. It does not store the notifications, so only the latest notifications (after you start your PC) are available. The extension uses background permissions so you do not need to start chrome for using it. It loads up at the user-login to OS.
 
 HNDN uses the Official Hacker News API available [here](https://github.com/HackerNews/API).
 
 ##Download
 
-[HNDN](https://chrome.google.com/webstore/detail/hndn/hkfhkpdkpjnbijpgfndjdghboghcplnc)
+[HNDN on Chrome Web Store](https://chrome.google.com/webstore/detail/hndn/hkfhkpdkpjnbijpgfndjdghboghcplnc)
 
 ##Development
 
