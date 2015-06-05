@@ -20,9 +20,9 @@ HNDN uses the Official Hacker News API available [here](https://github.com/Hacke
 
 ##Upcoming
 
-*Polling frequency settings. Current frequency is set to 30 seconds.
-*Some UI fixes.
-*Suggestions are welcome.
+* Polling frequency settings. Current frequency is set to 30 seconds.
+* Some UI fixes.
+* Suggestions are welcome.
 
 ##Screenshot
 
