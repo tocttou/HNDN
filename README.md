@@ -40,7 +40,7 @@ HNDN uses the Official Hacker News API available [here](https://github.com/Hacke
 
 ##License
 
-HNDN is MIT © [Ashish Chaudhary](https://github.com/yankee101) licensed.
+MIT © [Ashish Chaudhary](https://github.com/yankee101)
 
 ##Credits
 
