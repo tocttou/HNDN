@@ -32,7 +32,7 @@ HNDN uses the Official Hacker News API available [here](https://github.com/Hacke
 
 ###Notifications
 
-![HNDN](http://i.imgur.com/l5u9Nt8.png)
+![HNDN](http://i.imgur.com/fuzHe2q.png)
 
 ##License
 

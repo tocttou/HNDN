@@ -71,8 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var play = new Audio('/assets/sounds/' + presound);
         var notification = new Notification("Preview", {
             icon: '/assets/icons/newsicon128.png',
-            body: "This is a sample notification."
-          }); 
+            body: "This is a sample notification."}); 
         play.play();
         reset();
     });

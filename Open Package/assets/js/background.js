@@ -15,20 +15,30 @@ function playNotification(data,sound,message){
   $.get("https://hacker-news.firebaseio.com/v0/item/" + data + ".json?print=pretty", function(item, status){                   
     if(status == "success") {
       var audio = new Audio('/assets/sounds/' + sound);
-      var notification = new Notification(print, {
-          icon: '/assets/icons/newsicon128.png',
-          body: item["title"]
-        });                
-      audio.play();
-      notification.onclick = function () {
-        window.open("https://news.ycombinator.com/item?id=" + data);      
-      };    
+      if(message == "newstories"){
+        var notification = new Notification(print, {
+            icon: '/assets/icons/newsicon128.png',
+            body: item["title"]
+          });  
+        notification.onclick = function () {
+          window.open("https://news.ycombinator.com/item?id=" + data);      
+        }; 
+      }
+      else if(message == "topstories"){
+        var notification = new Notification(print, {
+            icon: '/assets/icons/newsicon128.png',
+            body: item["title"] + "\n" + "Score: " + item["score"]
+          });
+        notification.onclick = function () {
+          window.open("https://news.ycombinator.com/item?id=" + data);      
+        }; 
+      }              
+      audio.play();   
     }
   });
 }
 
 function fetchLocalStorage(){
-  console.log("Fetching local storage...");
   chrome.storage.local.get("sound", function(data) {
     sound = data["sound"];
   });
@@ -53,13 +63,15 @@ function fetchLocalStorage(){
 }
 
 fetchLocalStorage();
-setInterval(fetchLocalStorage,"30000");
+setInterval(fetchLocalStorage,"10000");
 
 function tester() {
   if(state == "Enabled"){
     if(message == "topstories"){
+      console.log("Testing top stories");
       $.get("https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty", function(data, status){                   
         if(status == "success") {
+          console.log("arrTop: " + arrTop[0] + " data: " + data[0]);
             if(arrTop.length == 0){
               arrTop.push(data[0]);
               console.log("Initialser running in background.js Testing: " + message);
@@ -80,12 +92,14 @@ function tester() {
     });
     }
     else if(message == "newstories"){
+      console.log("Testing new stories");
       $.get("https://hacker-news.firebaseio.com/v0/newstories.json?print=pretty", function(data, status){                   
         if(status == "success") {
+          console.log("arrNew: " + arrNew[0] + " data: " + data[0]);
             if(arrNew.length == 0){
               arrNew.push(data[0]);
               console.log("Initialser running in background.js Testing: " + message);
-              playNotification(data[0],sound);
+              playNotification(data[0],sound,message);
             }
             else if(arrNew.length == 1){
               if(data[0] > arrNew[0]){
