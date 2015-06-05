@@ -28,7 +28,7 @@ HNDN uses the Official Hacker News API available [here](https://github.com/Hacke
 * Some UI fixes.
 * Suggestions are welcome.
 
-##Screenshot
+##Screenshots
 
 ###Extension
 
