@@ -6,7 +6,11 @@ HNDN is a chrome extension that brings you latest top/new stories from Hacker Ne
 
 HNDN uses the Official Hacker News API available [here](https://github.com/HackerNews/API).
 
-##Usage
+###Download
+
+[HNDN](https://chrome.google.com/webstore/detail/hndn/hkfhkpdkpjnbijpgfndjdghboghcplnc)
+
+##Development
 
 1. Settings-Icon > Tools > Extensions
 2. Check the 'Developer mode' checkbox.
@@ -36,8 +40,10 @@ HNDN uses the Official Hacker News API available [here](https://github.com/Hacke
 
 ##License
 
-HNDN is MIT © [Ashish Chaudhary](https://github.com/yankee101) licensed. If you plan to publish it on the chrome store, please making it free. I can't publish it on my own as of now because mainstream Indian banks do not support Google Wallet.
+HNDN is MIT © [Ashish Chaudhary](https://github.com/yankee101) licensed.
 
 ##Credits
 
-Credits for the notifications sounds used can be found in the '/assets/sounds' directory of the repo. 
+[captn3mo](https://github.com/captn3m0), [SDSLabs](https://github.com/sdslabs) for publishing the extension.
+
+Credits for the notifications sounds used can be found in the '/assets/sounds' directory of the repo.
