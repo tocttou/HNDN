@@ -10,7 +10,7 @@ HNDN uses the Official Hacker News API available [here](https://github.com/Hacke
 
 1. Settings-Icon > Tools > Extensions
 2. Check the 'Developer mode' checkbox.
-3. Load unpacked extension button > Browse to 'Open Package' folder > Ok
+3. Load unpacked extension button > Browse to the HNDN folder > Ok
 
 ##Current Features
 
@@ -40,4 +40,4 @@ HNDN is MIT © [Ashish Chaudhary](https://github.com/yankee101) licensed. If you
 
 ##Credits
 
-Credits for the notifications sounds used can be found in the 'Open Package/assets/sounds' directory of the repo. 
+Credits for the notifications sounds used can be found in the '/assets/sounds' directory of the repo. 
