@@ -15,7 +15,7 @@
 
       <a target="_blank" href = "https://news.ycombinator.com/"><button id = "hacker"> Hacker News </button></a>
 
-      <select id="soundValue">
+      <select class = "dropdown" id="soundValue">
         <option selected = "selected" value="sound1.mp3">Sound1</option>
         <option value = "sound2.mp3">Sound2</option>
         <option value = "sound3.mp3">Sound3</option>
@@ -28,21 +28,31 @@
 
       <div class = "button-wrapper">
 
-        <div class = "stick"> | </div>
-
-        <button id = "preview">Preview</button>
-
-        <div class = "stick"> | </div>
-
-        <button id = "type"></button>
-
-        <div class = "stick"> | </div>
-
-        <button id = "onoff"></button>
+        <button class = "stick" style = "cursor: default;"> | </button>    
 
       </div>
 
-      <div id = "display"></div>
+      <select class = "dropdown" id="dismissal">
+        <option value="0">Dismiss: No</option>
+        <option value="3000">Dismiss: 03s</option>
+        <option value = "5000">Dismiss: 05s</option>
+        <option value = "7000">Dismiss: 07s</option>
+        <option value = "9000">Dismiss: 09s</option>
+        <option value = "11000">Dismiss: 11s</option>
+        <option value = "13000">Dismiss: 13s</option>
+        <option value = "15000">Dismiss: 15s</option>
+        <option value = "17000">Dismiss: 17s</option>
+      </select>
+
+      <div class = "button-wrapper">
+
+        <button class = "stick" style = "cursor: default;"> | </button>
+
+        <button id = "type"></button>
+
+        <button id = "onoff"></button>       
+
+      </div>
 
     </div>
 

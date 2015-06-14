@@ -21,11 +21,13 @@
     "https://*/*",
     "storage"
   ],
+  "content_security_policy": "script-src 'self' https://*.firebaseio.com/; object-src 'self'",
   "web_accessible_resources": ["/assets/sounds/*","/assets/icons/*"],
   "background": {
         "scripts": [
             "/assets/js/background.js",
-            "/assets/js/jquery-2.1.4.min.js"
+            "/assets/js/jquery-2.1.4.min.js",
+            "/assets/js/firebase.js"
         ]
     }
 }

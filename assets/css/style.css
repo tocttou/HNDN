@@ -1,21 +1,26 @@
 body{
 	font-size: 100%;
 	background-color: #ff6600;
+	height: 1em;
 }
 
 .super{
 	width: 40em;
 	text-align: center;
+	display: table;
+	-khtml-user-select: none;
+    -o-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
-#soundValue{
+.dropdown{
 	float: left;
 	background-color: #ff6600;
 	border: none;
-	margin-bottom: 1%;
 }
 
-#soundValue:focus{
+.dropdown:focus{
 	outline: none;
 }
 
@@ -32,18 +37,14 @@ body{
 
 .stick{
 	float: left;
-	margin-top: -0.5%;
 	font-size: 13px;
+	width: 0px;
 }
 
 #image{
 	float: left;
 	border: 1px #ffffff solid;
 	margin-top: -0.5%;
-	-khtml-user-select: none;
-    -o-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
 }
 
 #hacker{
@@ -58,8 +59,11 @@ body{
 	outline: none;
 }
 
-#display{
+#onoff{
 	float: right;
-	margin-top: -0.5%;
-	font-weight: bold;
+}
+
+#options{
+	float: left;
+	vertical-align:middle;
 }
