@@ -10,7 +10,7 @@ HNDN uses the Official Hacker News API available [here](https://github.com/Hacke
 
 [HNDN on Chrome Web Store](https://chrome.google.com/webstore/detail/hndn/hkfhkpdkpjnbijpgfndjdghboghcplnc)
 
-###If the extension does not run in the background automatically, Goto Settings-> Show advanced settings -> System -> Checkbox: "Continue running background apps when Google Chrome [or chromium] is closed."
+If the extension does not run in the background automatically, Goto Settings-> Show advanced settings -> System -> Checkbox: "Continue running background apps when Google Chrome [or chromium] is closed."
 
 ##Development
 
