@@ -95,9 +95,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     //Set display for dismissal time.
-        chrome.storage.local.get("dismissal", function(data) {
-            document.getElementById("dismissal").value = data["dismissal"];
-        });
+    chrome.storage.local.get("dismissal", function(data) {
+        document.getElementById("dismissal").value = data["dismissal"];
+    });
 
     //Set notification dismissal time.
     var dismiss = document.getElementById('dismissal');
