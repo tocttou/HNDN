@@ -24,9 +24,6 @@ function playNotification(data,sound,message){
             window.open("https://news.ycombinator.com/item?id=" + data);      
           }; 
         audio.play();
-        chrome.storage.local.get("dismissal", function(data) {
-          speed = data["dismissal"];
-        });
         console.log("Did here");
         console.log(speed);
         if(speed != 0){
@@ -48,9 +45,6 @@ function playNotification(data,sound,message){
                   window.open("https://news.ycombinator.com/item?id=" + data);      
                 };
               audio.play();
-              chrome.storage.local.get("dismissal", function(data) {
-                speed = data["dismissal"];
-              });
               console.log("Did There");
               console.log(speed);
               if(speed != 0){
@@ -166,9 +160,17 @@ chrome.runtime.onMessage.addListener(function(request,sender,sendResponse){
       console.log("State Changed to " + request.greeting);
       state = request.greeting;
     }
-    else{
+    else if(request.greeting == "topstories" || request.greeting == "newstories"){
       console.log("Type Changed to " + request.greeting);
       message = request.greeting;
+    }
+    else if(request.agent == "sound"){
+      console.log("Sound Changed to " + request.greeting);
+      sound = request.greeting;
+    }
+    else if(request.agent == "timing"){
+      console.log("Speed Changed to " + request.greeting);
+      speed = request.greeting;
     }
 });
 
@@ -187,6 +189,7 @@ function tester() {
         state = data["state"];
       });
       console.log("Current topstory: " + topshot.val());
+      console.log("Current state: " + state);
       if(state == "Enabled" && message == "topstories"){
         playNotification(topshot.val(),sound,message);
       }
@@ -203,6 +206,7 @@ function tester() {
         state = data["state"];
       });
       console.log("Current newstory: " + newshot.val());
+      console.log("Current state: " + state);
       if(state == "Enabled" && message == "newstories"){
         playNotification(newshot.val(),sound,message);
       }

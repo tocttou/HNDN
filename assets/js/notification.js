@@ -30,6 +30,9 @@ document.addEventListener('DOMContentLoaded', function() {
     link.addEventListener('change', function() {
         var sound = document.getElementById('soundValue').value; 
         chrome.storage.local.set({"sound" : sound}, function() {
+            chrome.runtime.sendMessage({greeting: sound, agent: "sound"},
+                function (response){
+            });
         });
         var play = new Audio('/assets/sounds/' + sound);
         play.play(); 
@@ -45,6 +48,9 @@ document.addEventListener('DOMContentLoaded', function() {
                   chrome.browserAction.setIcon({
                       path: "/assets/icons/disabledicon.png"
                   });
+                  chrome.runtime.sendMessage({greeting: "Disabled", agent: "toggle"},
+                      function (response){
+                  });
                 });
                 chrome.storage.local.set({"icon" : "black"}, function() {
                 });
@@ -54,6 +60,9 @@ document.addEventListener('DOMContentLoaded', function() {
                   document.getElementById("onoff").innerHTML = "Disable";
                   chrome.browserAction.setIcon({
                       path: "/assets/icons/newsicon48.png"
+                  });
+                  chrome.runtime.sendMessage({greeting: "Enabled", agent: "toggle"},
+                      function (response){
                   });
                 });
                 chrome.storage.local.set({"icon" : "red"}, function() {
@@ -70,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 chrome.storage.local.set({"type" : "newstories"}, function() {
                   document.getElementById("type").innerHTML = "Current: New Stories";
                 });
-                chrome.runtime.sendMessage({greeting: "newstories"},
+                chrome.runtime.sendMessage({greeting: "newstories", agent: "getwhat"},
                     function (response){
                 });
             }
@@ -78,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 chrome.storage.local.set({"type" : "topstories"}, function() {
                   document.getElementById("type").innerHTML = "Current: Top Stories";
                 });
-                chrome.runtime.sendMessage({greeting: "topstories"},
+                chrome.runtime.sendMessage({greeting: "topstories", agent: "getwhat"},
                     function (response){
                 });
             }
@@ -95,6 +104,9 @@ document.addEventListener('DOMContentLoaded', function() {
     dismiss.addEventListener('change', function() {
         var speed = document.getElementById('dismissal').value; 
         chrome.storage.local.set({"dismissal" : speed}, function() {
+        });
+        chrome.runtime.sendMessage({greeting: speed, agent: "timing"},
+            function (response){
         });
     });
 
