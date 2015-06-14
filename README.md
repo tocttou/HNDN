@@ -10,6 +10,8 @@ HNDN uses the Official Hacker News API available [here](https://github.com/Hacke
 
 [HNDN on Chrome Web Store](https://chrome.google.com/webstore/detail/hndn/hkfhkpdkpjnbijpgfndjdghboghcplnc)
 
+###If the extension does not run in the background automatically, Goto Settings-> Show advanced settings -> System -> Checkbox: "Continue running background apps when Google Chrome [or chromium] is closed."
+
 ##Development
 
 1. Settings-Icon > Tools > Extensions
@@ -20,6 +22,7 @@ HNDN uses the Official Hacker News API available [here](https://github.com/Hacke
 
 * Choose from 8 different notification sounds.
 * Choose between 'Top Stories' and 'New Stories'.
+* Choose auto-clear time.
 * Enable/Disable the extension at any time.
 
 ##Screenshots
