@@ -105,7 +105,7 @@ chrome.storage.local.get("dismissal", function(data) {
 }
 
 function setStorageAgain(){                                          //For some weird reason, storage is not set for the first time.
-chrome.storage.local.get("sound", function(data) {
+chrome.storage.local.get("sound", function(data) {                   //Probably because chrome local storage is slow.
   sound = data["sound"];
   if(!sound){
     chrome.storage.local.set({"sound":"sound1.mp3"}, function() {
