@@ -33,7 +33,7 @@ If the extension does not run in the background automatically, Goto Settings-> S
 
 ###Extension
 
-![HNDN](http://i.imgur.com/2JNnArS.png)
+![HNDN](http://i.imgur.com/IXhLFog.png)
 
 ###Notifications
 
