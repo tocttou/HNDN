@@ -2,10 +2,11 @@ body{
 	font-size: 100%;
 	background-color: #ff6600;
 	height: 1em;
+	"overflow":"hidden"
 }
 
 .super{
-	width: 40em;
+	width: 45em;
 	text-align: center;
 	display: table;
 	-khtml-user-select: none;

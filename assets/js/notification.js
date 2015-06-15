@@ -35,6 +35,9 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
         var play = new Audio('/assets/sounds/' + sound);
+        chrome.storage.local.get("volume", function(data) {
+          play.volume = data["volume"];
+        })
         play.play(); 
     });
 
@@ -110,4 +113,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    //Volume options.
+    var volume = document.getElementById('volume');
+    volume.addEventListener('click',function() {
+      if (chrome.runtime.openOptionsPage) {
+        chrome.runtime.openOptionsPage();
+      } else {
+        window.open(chrome.runtime.getURL('options.html'));
+      }
+    });
 });

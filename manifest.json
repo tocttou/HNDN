@@ -13,6 +13,10 @@
            "48": "/assets/icons/newsicon48.png",
           "128": "/assets/icons/newsicon128.png" 
   },
+  "options_ui": {
+     "page": "options.html",
+     "chrome_style": true
+   },
   "permissions": [
     "tabs",
     "background",

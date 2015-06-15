@@ -3,6 +3,7 @@ var state;
 var message;
 var print;
 var speed;
+var volume;
 
 function playNotification(data,sound,message){
   if(message == "topstories"){
@@ -22,10 +23,9 @@ function playNotification(data,sound,message){
             });  
           notification.onclick = function () {
             window.open("https://news.ycombinator.com/item?id=" + data);      
-          }; 
+          };
+        audio.volume = volume;
         audio.play();
-        console.log("Did here");
-        console.log(speed);
         if(speed != 0){
           setTimeout(function(){
               notification.close();
@@ -44,9 +44,8 @@ function playNotification(data,sound,message){
                 notification.onclick = function () {
                   window.open("https://news.ycombinator.com/item?id=" + data);      
                 };
+              audio.volume = volume;
               audio.play();
-              console.log("Did There");
-              console.log(speed);
               if(speed != 0){
                 setTimeout(function(){
                     notification.close();
@@ -96,6 +95,14 @@ chrome.storage.local.get("dismissal", function(data) {
     });
   }
 });
+chrome.storage.local.get("volume", function(data) {
+  volume = data["volume"];
+  if(!volume){
+    chrome.storage.local.set({"volume": 1.0}, function() {
+      volume = 1.0;
+    });
+  }
+});
 }
 
 function setStorageAgain(){                                          //For some weird reason, storage is not set for the first time.
@@ -131,7 +138,15 @@ chrome.storage.local.get("dismissal", function(data) {
     });
   }
 });
-console.log("i found this speed: " + speed);
+chrome.storage.local.get("volume", function(data) {
+  volume = data["volume"];
+  if(!volume){
+    chrome.storage.local.set({"volume": 1.0}, function() {
+      volume = 1.0;
+    });
+  }
+});
+console.log("i found this speed: " + speed + " and this volume: " + volume);
   tester();
 }
 
@@ -171,6 +186,10 @@ chrome.runtime.onMessage.addListener(function(request,sender,sendResponse){
     else if(request.agent == "timing"){
       console.log("Speed Changed to " + request.greeting);
       speed = request.greeting;
+    }
+    else if(request.agent == "volume"){
+      console.log("volume Changed to " + request.greeting);
+      volume = request.greeting;
     }
 });
 
