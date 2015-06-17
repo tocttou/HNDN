@@ -8,9 +8,7 @@ HNDN uses the Official Hacker News API available [here](https://github.com/Hacke
 
 ##Download
 
-(Outdated version. Uses polling instead of websockets. Does't have auto-clear.)
-
-[HNDN on Chrome Web Store](https://chrome.google.com/webstore/detail/hndn/hkfhkpdkpjnbijpgfndjdghboghcplnc)
+You can install HNDN from the [Chrome Web Store](https://chrome.google.com/webstore/detail/hndn/hkfhkpdkpjnbijpgfndjdghboghcplnc)
 
 If the extension does not run in the background automatically, Goto Settings-> Show advanced settings -> System -> Checkbox: "Continue running background apps when Google Chrome [or chromium] is closed."
 
@@ -45,6 +43,6 @@ MIT © [Ashish Chaudhary](https://github.com/yankee101)
 
 ##Credits
 
-[captn3mo](https://github.com/captn3m0), [SDSLabs](https://github.com/sdslabs) for publishing the extension.
+[captn3m0](https://github.com/captn3m0), [SDSLabs](https://github.com/sdslabs) for publishing the extension.
 
 Credits for the notifications sounds used can be found in the '/assets/sounds' directory of the repo.
