@@ -3,7 +3,7 @@
 
   "name": "HNDN",
   "description": "This extension shows a notifications for latest new/top stories from Hackernews.",
-  "version": "1.0",
+  "version": "1.2",
 
   "browser_action": {
     "default_popup": "popup.html",
@@ -18,7 +18,6 @@
      "chrome_style": true
    },
   "permissions": [
-    "tabs",
     "background",
     "notifications",
     "http://*/*",

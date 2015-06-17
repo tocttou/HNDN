@@ -26,14 +26,13 @@ If the extension does not run in the background automatically, Goto Settings-> S
 * Choose between 'Top Stories' and 'New Stories'.
 * Choose auto-clear time.
 * Adjust notification volume.
-* Post to HN: Submit the page you are on.
 * Enable/Disable the extension at any time.
 
 ##Screenshots
 
 ###Extension
 
-![HNDN](http://i.imgur.com/IXhLFog.png)
+![HNDN](http://i.imgur.com/gRxdC5R.png)
 
 ###Notifications
 
